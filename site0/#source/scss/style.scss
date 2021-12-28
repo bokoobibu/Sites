@@ -15,6 +15,10 @@
     font-family: OpenSansBold;
     src: url('../fonts/OpenSans-Bold.ttf');
 }
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/Montserrat-Regular.ttf');
+}
 * {
     font-family: OpenSans;
 }
@@ -169,6 +173,101 @@ header {
         border: none;
         border-radius: calc(75px / 2);
         margin: 0 auto 50px;
+    }
+}
+main {
+    & .block1 {
+        background: #27292c;
+        padding: 108px 0 71px;
+        & .block1__container {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            max-width: 1050px;
+            & h1 {
+                font-family: Reey;
+                font-size: 75px;
+                line-height: 52px;
+                font-weight: 400;
+                color: #fff;
+                text-align: center;
+                padding-bottom: 90px;
+            }
+            & .grid__container {
+                padding-bottom: 75px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+                column-gap: 41px;
+                font-family: Montserrat;
+                font-size: 16.7px;
+                line-height: 25px;
+                font-weight: 400;
+                color: #fff;
+            }
+            & button {
+                margin: auto;
+                border: none;
+                font-family: Montserrat;
+                font-size: 26.4px;
+                line-height: 1.2;
+                font-weight: 700;
+                color: #27292c;
+                width: 270px;
+                height: 58px;
+                background-color: #fefefe;
+                text-transform: uppercase;
+                border-radius: calc(58px / 2);
+            }
+        }
+    }
+    & .block2 {
+        & .block2__container {
+            padding: 54px 0 0 0;
+            max-width: calc(1440px - 264px);
+            margin: auto;
+            & .blcok2__section {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+                column-gap: 66px;
+                align-items: center;
+                & img {
+                    width: 100%;
+                }
+                & .block2__description {
+                    display: flex;
+                    flex-direction: column;
+                    & h1 {
+                        font-family: OpenSansBold;
+                        font-size: 58.4px;
+                        line-height: 1.2;
+                        color: #27292c;
+                    }
+                    & p {
+                        padding: 70px 0;
+                        font-size: 29.2px;
+                        line-height: 23px;
+                        font-weight: 400;
+                        color: #27292c;
+                    }
+                    & button {
+                        font-family: OpenSansBold;
+                        width: 334px;
+                        height: 75px;
+                        background-color: #27292c;
+                        font-size: 29.2px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        letter-spacing: 0.2em;
+                        color: #fff;
+                        border: none;
+                        border-radius: calc(75px / 2);
+                    }
+                }
+            }
+            & .blcok2__section:nth-child(2) {
+                padding-top: 125px;
+            }
+        }
     }
 }
 .mainFather {
