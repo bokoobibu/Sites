@@ -807,3 +807,55 @@ main .block5 form input[type=submit] {
   margin-left: -60px;
   margin-top: -6px;
 }
+
+footer {
+  min-height: 600px;
+}
+footer .footer__grid__container {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  max-width: 1440px;
+  margin: auto;
+  grid-gap: 50px;
+}
+footer .footer__grid__container ul:nth-child(1) {
+  -ms-grid-column-span: 2;
+  grid-column: span 2;
+  max-width: 455px;
+}
+footer .footer__grid__container ul:nth-child(1) .footer__grid__container-text {
+  padding-bottom: 35px;
+}
+footer .footer__grid__container .footer__social li {
+  border-radius: calc(40px / 2);
+  display: inline;
+  background: #000;
+}
+footer .footer__grid__container .footer__social li img {
+  width: 42px;
+  height: 42px;
+}
+footer .footer__grid__container li {
+  font-family: Montserrat;
+  font-size: 23.7px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #343434;
+}
+footer .footer__grid__container .footer__grid__container-h1 {
+  font-family: Montserrat;
+  font-size: 31.6px;
+  line-height: 1.2;
+  font-weight: 400;
+  color: #343434;
+  padding-bottom: 40px;
+}
+footer .footer__grid__container a {
+  text-decoration: none;
+  font-family: Montserrat;
+  font-size: 23.7px;
+  line-height: 41px;
+  font-weight: 400;
+  color: #343434;
+}
