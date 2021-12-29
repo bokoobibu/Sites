@@ -1,0 +1,101 @@
+@import 'reset.scss';
+@import 'fonts.scss';
+body {
+    zoom: 35%;
+    background: url('../img/jpg/background.jpg') 0 0 / cover no-repeat;
+}
+header {
+    & nav {
+        display: flex;
+        justify-content: flex-end;
+        & ul {
+            width: 100%;
+            max-width: calc(1025px + 440px);
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap-reverse;
+            & li {
+                display: flex;
+                align-items: flex-end;
+                & a {
+                    font-family: Montserrat;
+                    font-size: 61.7px;
+                    line-height: 283px;
+                    font-weight: 400;
+                    letter-spacing: 0.01em;
+                    color: #ffffff;
+                    text-decoration: none;
+                    &:focus {
+                        outline: none;
+                    }
+                    & img {
+                    }
+                }
+            }
+        } 
+    }
+}
+main {
+    display: flex;
+    justify-content: flex-end;
+    & section {
+        padding-right: 300px;
+        max-width: 1200px;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 420px;
+        & h1 {
+            padding: 140px 0 60px;
+            font-family: Raleway-Bold;
+            font-size: 125px;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+        & p {
+            padding-bottom: 150px;
+            max-width: 1200px;
+            font-family: Montserrat;
+            font-size: 58.4px;
+            line-height: 71px;
+            font-weight: 400;
+            letter-spacing: 0.1em;
+            text-align: center;
+            color: #ffffff;
+        }
+        & button {
+            margin: auto;
+            max-width: 790px;
+            border: 20px solid #fff;
+            box-shadow: inset 0px 0px 81px 17px  #6dfffd, 0px 0px 81px 17px #6dfffd;
+            padding: 50px 100px;
+            background: transparent;
+            font-family: Raleway-Regular;
+            font-size: 125px;
+            line-height: 1.2;
+            color: #ffffff;
+        }
+    }
+}
+footer {
+    font-family: Montserrat;
+    padding-bottom: 120px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    & ul {
+        width: 100%;
+        max-width: 380px;
+        display: flex;
+        justify-content: space-between;
+        & li {
+
+        }
+    }
+    & a {
+        text-decoration: none;
+        font-size: 58.4px;
+        line-height: 71px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
