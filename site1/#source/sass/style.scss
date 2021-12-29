@@ -1,8 +1,15 @@
 @import 'reset.scss';
 @import 'fonts.scss';
-body {
-    zoom: 35%;
-    background: url('../img/jpg/background.jpg') 0 0 / cover no-repeat;
+html {
+    height: 100%;
+    & body {
+        height: inherit;
+        display: flex;
+        flex-direction: column;
+        zoom: 35%;
+        background: url('../img/jpg/background.jpg') 0 0 / cover no-repeat;
+        background-attachment: fixed;
+    }
 }
 header {
     & nav {
@@ -80,6 +87,8 @@ footer {
     font-family: Montserrat;
     padding-bottom: 120px;
     display: flex;
+    flex: 1 0 auto;
+    min-height: auto;
     justify-content: space-around;
     flex-wrap: wrap;
     & ul {
@@ -98,4 +107,9 @@ footer {
         font-weight: 400;
         color: #ffffff;
     }
+}
+.mainAuthor {
+    display: flex;
+    font-size: 36px;
+    background: #fff;
 }

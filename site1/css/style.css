@@ -375,9 +375,21 @@ textarea {
   font-family: Raleway-Regular;
   src: url("../fonts/Raleway-Regular.ttf");
 }
-body {
+html {
+  height: 100%;
+}
+html body {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   zoom: 35%;
   background: url("../img/jpg/background.jpg") 0 0/cover no-repeat;
+  background-attachment: fixed;
 }
 
 header nav {
@@ -478,6 +490,10 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  min-height: auto;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -ms-flex-wrap: wrap;
@@ -499,4 +515,12 @@ footer a {
   line-height: 71px;
   font-weight: 400;
   color: #ffffff;
+}
+
+.mainAuthor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 36px;
+  background: #fff;
 }
