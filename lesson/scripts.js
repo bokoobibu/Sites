@@ -1,7 +1,7 @@
-let ask = (question, yes, no) => confirm(question) ? yes() : no();  
+'use strict';
+function randomInteger(min, max) {
+    let rand = min + Math.random() * (max - min);
+    return Math.round(rand);
+  }
   
-ask(
-    "Вы согласны?",
-    () => alert("Вы согласились."),
-    () => alert("Вы отменили выполнение.")
-);
+  alert( randomInteger(1, 3) );
