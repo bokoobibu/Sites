@@ -14,9 +14,9 @@ document.querySelector('#formSubmit').onclick = function() {
     else {
         userName.style.border = '';
     }
-    /* Условие при котором если поле ввода телефона пользователя пустое, или его длина больше 10, то результат
+    /* Условие при котором если поле ввода телефона пользователя пустое, или его длина меньше или больше 10, то результат
     обработает запрос при котором рамка поля ввода окрасится красным и запрос на отправку не выполнится */
-    if(userTelephone === '' || userTelephone.value.length < 10) {
+    if(userTelephone === '' || userTelephone.value.length < 10 || userTelephone.value.length > 10) {
         userTelephone.style.border = '4px red solid';
         return false;
     }
