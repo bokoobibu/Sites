@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Контейнер сайта для выравнивания по центру -->
+    <div class="container">
+        <!-- Изображение-интро -->
+        <div class="userAvatar">
+            <img src="img/userAvatar.jpg" alt="Аватар пользователя">
+            <p>Hello<br> my friend</p>
+        </div>
+        <!-- Форма для ввода данных -->
+        <form action="" method="get" name="formForRegistration">
+            <!-- Имя пользователя -->
+            <label for="userName">Ваше имя</label>
+            <input type="text" id="userName" placeholder="Имя" name="userName" onkeypress="if(event.keyCode == 13) return false;">
+            <!-- Телефон пользователя -->
+            <label for="userTelephone">Телефон</label>
+            <input type="tel" id="userTelephone" placeholder="Номер телефона" name="userTelephone" onkeypress="if(event.keyCode == 13) return false;">
+            <!-- Пароль пользователя -->
+            <label for="userPassword">Пароль</label>
+            <input type="password" id="userPassword" placeholder="•••••••••" name="userPassword" onkeypress="if(event.keyCode == 13) return false;">
+            <!-- Отношение пользователя к работе -->
+            <input type="radio" name="loveJob" id="loveJobNumOne" checked value="Люблю свою работу">
+            <label for="loveJobNumOne" class="castomRadio">Люблю свою работу</label>
+            <input type="radio" name="loveJob" id="loveJobNumTwo" checked value="Очень люблю свою работу">
+            <label for="loveJobNumTwo" class="castomRadio">Очень люблю свою работу</label>
+            <!-- Кнопка отправки данных -->
+            <input type="submit" value="Отправить анкету" id="formSubmit" onkeypress="if(event.keyCode == 13) return false;">
+        </form>
+    </div>
+    <!-- Подключенный скрипт JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>

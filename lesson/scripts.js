@@ -1,7 +1,9 @@
 'use strict';
-function randomInteger(min, max) {
-    let rand = min + Math.random() * (max - min);
-    return Math.round(rand);
-  }
-  
-  alert( randomInteger(1, 3) );
+let selectedOption = genres.options[genres.selectedIndex];
+alert(selectedOption.value);
+alert(selectedOption.text);
+
+let newOption = new Option("Классика", "classics");
+genres.append(newOption);
+
+newOption.selected = true;

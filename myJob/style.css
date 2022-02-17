@@ -1,0 +1,148 @@
+font-face {
+    font-family: Roboto;
+    src: 'fonts/Roboto-Regular.ttf';
+}
+body {
+    margin: 0;
+}
+
+.container {
+    min-width: 360px;
+    max-width: 1920px;
+    padding: 113px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.userAvatar {
+    position: relative;
+}
+
+.userAvatar img {
+    max-width: 400px;
+    min-width: 360px;
+    height: 547px;
+}
+
+.userAvatar p {
+    white-space: nowrap;
+    font-family: Roboto;
+    font-size: 88px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 96px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7D98F6;
+    position: absolute;
+    top: 130px;
+    left: 153px;
+    height: auto;
+    width: auto;
+    transform: rotate(-45deg);
+}
+
+form {
+    display: flex;
+    width: 100%;
+    min-width: 360px;
+    max-width: 400px;
+    padding-left: 176px;
+    flex-direction: column;
+}
+
+form label {
+    display: inline-block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: #222222;
+    padding: 16px 0;
+}
+
+form input {
+    padding: 8px 16px;
+    width: 100%;
+    height: 40px;
+    background: #F8F8F8;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    color: #A9A9A9;
+    border-radius: 15px;
+}
+
+form input:focus {
+    color: #000;
+}
+
+.castomRadio:hover {
+    cursor: pointer;
+}
+
+.castomRadio::before {
+    vertical-align: middle;
+    margin-right: 16px;
+    content: '';
+    display: inline-block;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+input[type=radio]+label::before {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+}
+
+input[type=radio]:checked+label::before {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    Box-shadow: inset 0px 0px 0px 10px #7D98F6;
+    border-radius: 50%;
+}
+
+input[type=submit] {
+    display: flex;
+    width: 218px;
+    height: 56px;
+    background: #7D98F6;
+    border-radius: 25px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
+    align-self: end;
+    justify-content: center;
+    margin-top: 39px;
+}
+
+@media (max-width: 1160px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    form {
+        margin: auto;
+        padding-left: 0;
+    }
+
+    .userAvatar {
+        margin: auto    ;
+    }
+}
